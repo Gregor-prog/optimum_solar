@@ -58,7 +58,7 @@ const navItems: NavItem[] = [
   
 
   return (
-    <header className=" z-50 mt-8  bg-[#f1d1b27a] rounded-3xl drop-shadow-xl drop-shadow-[#0000004d] shadow-black">
+    <header className=" z-50  bg-[#f1d1b27a] rounded-3xl drop-shadow-xl drop-shadow-[#0000004d] shadow-black">
       <div className=" mx-auto px-4 py-3">
         <div className="flex justify-between items-center ">
           {/* Logo */}

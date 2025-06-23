@@ -85,7 +85,7 @@ const productCategories: ProductCategory[] = [
             <h3 className="text-2xl font-semibold text-gray-700">{category.category}</h3>
             <a
               href="/products"
-              className="text-red-600 hover:underline text-sm font-medium"
+              className="text-[#7c7c7c] hover:underline text-sm font-medium"
             >
               See more →
             </a>
@@ -100,7 +100,7 @@ const productCategories: ProductCategory[] = [
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover shadow shadow-black"
                 />
                 <div className="p-4">
                   <h4 className="text-lg font-semibold text-gray-800">{product.name}</h4>
