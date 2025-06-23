@@ -11,7 +11,7 @@ interface NavigationBarProps {
   logo?: string;
 }
 
-const NavigationBar: React.FC<NavigationBarProps> = ({ logo = "Optimum Solar" }) => {
+const NavigationBar: React.FC<NavigationBarProps> = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
 
