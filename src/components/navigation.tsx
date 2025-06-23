@@ -7,11 +7,9 @@ interface NavItem {
   icon?: string;
 }
 
-interface NavigationBarProps {
-  logo?: string;
-}
 
-const NavigationBar: React.FC<NavigationBarProps> = () => {
+
+const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
 
@@ -60,14 +58,11 @@ const navItems: NavItem[] = [
   
 
   return (
-    <header className=" top-0 z-50 bg-[#f1d1b27a] rounded-3xl mt-[20px] drop-shadow-xl drop-shadow-[#0000004d] shadow-black">
-      <div className="container mx-auto px-4 py-3">
-        <div className="flex justify-between items-center">
+    <header className=" z-50 mt-8  bg-[#f1d1b27a] rounded-3xl drop-shadow-xl drop-shadow-[#0000004d] shadow-black">
+      <div className=" mx-auto px-4 py-3">
+        <div className="flex justify-between items-center ">
           {/* Logo */}
           <a href="#" className="flex items-center space-x-2">
-            {/* <span className="text-2xl text-center font-bold bg-gradient-to-r from-[#FF9800] to-orange-600 bg-clip-text text-transparent">
-              {logo}
-            </span> */}
             <img src={OPt} alt=""className='w-[70px] ml-[20px]' />
           </a>
           
@@ -127,12 +122,12 @@ const navItems: NavItem[] = [
         
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 w-[%]">
+          <div className="md:hidden mt-[20px] pb-4">
             <div className="flex flex-col space-y-3">
               {navItems.map((item, index) => (
                 <Link
                   key={index}
-                  to={item.href}
+                  to={item.href}  
                   onClick={(e) => handleNavClick(e, item.name)}
                   className={`px-3 py-2 rounded-lg transition-colors duration-200 ${
                     activeLink === item.name.toLowerCase()
@@ -152,6 +147,7 @@ const navItems: NavItem[] = [
         )}
       </div>
     </header>
+    
   );
 };
 
