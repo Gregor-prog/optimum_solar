@@ -91,7 +91,7 @@ const products: Product[] = [
 
 
     return <div>
-    <section className="my-[100px] bg-[#ffffff7a] p-[20px]">
+    <section className="mt-[100px] bg-[#ffffff7a] p-[20px]">
       <div className="flex flex-col sm:flex-row items-center justify-between  sm:p-[20px] sm:px-[100px]">
         <div className="h-[70%] sm:w-[50%] my-[20px]">
           <p className="font-bold text-3xl sm:text-4xl my-[20px]">Explore Our Quality Product</p>
