@@ -1,4 +1,4 @@
-import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaWhatsapp,FaYoutube,FaTiktok,FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-white mb-3">Connect with us</h4>
           <div className="flex space-x-4 text-xl text-orange-500">
             <a
-              href="https://wa.me/2347012345678"
+              href="https://wa.me/234703627361"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-orange-300"
@@ -34,7 +34,7 @@ const Footer = () => {
               <FaWhatsapp />
             </a>
             <a
-              href="https://instagram.com/optimumsolar"
+              href="https://www.instagram.com/optimum_gadgets_solar_inns"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-orange-300"
@@ -42,12 +42,36 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://facebook.com/optimumsolar"
+              href="https://www.facebook.com/people/Optim%C3%BBm-Gadgets-MART/100094600571420/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-orange-300"
             >
               <FaFacebookF />
+            </a>
+            <a
+              href="https://www.youtube.com/@Optimum_Gadgets_Solar_Inns"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-orange-300"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://t.me//OPTIMUM_GADGET_SOLAR_INNOVATIONS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-orange-300"
+            >
+              <FaTelegram />
+            </a>
+            <a
+              href="https://www.tiktok.com/@optimum_gadget_solar_inn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-orange-300"
+            >
+              <FaTiktok />
             </a>
           </div>
         </div>

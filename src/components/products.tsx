@@ -107,7 +107,8 @@ const products: Product[] = [
       stopOnHover={true} // Pauses on hover
       swipeable={true}   // Allows swiping on touch screens
       dynamicHeight={false}
-      showIndicators={false} >
+      showIndicators={false}
+       >
           {products.map((product, index) => (
           <div
             key={index}
