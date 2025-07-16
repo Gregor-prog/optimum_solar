@@ -1,5 +1,3 @@
-import React from 'react';
-import { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import one from "../assets/plans/IMG-20250706-WA0007.jpg"
