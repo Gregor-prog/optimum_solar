@@ -1,14 +1,21 @@
-import React from 'react';
+import { useEffect } from "react";
 import founderImage from "../assets/IMG-20250705-WA0020.jpg"
-const Founder: React.FC = () => {
+import AOS from "aos"
+import 'aos/dist/aos.css';
+const Founder = () => {
+
+  useEffect(() => {
+      AOS.init()
+  },[])
+
   const founder = {
     name: 'Mr. Olayiwola Sulaimon A.',
     title: 'Visionary Founder & CEO',
     imageUrl: founderImage, // Placeholder image
-    bio: `Mr. Olayiwola Sulaimon A. , a passionate advocate for sustainable energy, founded Optimum Solar with a clear mission: to make clean, affordable solar power accessible to every home and business. With a Ph.D. in Renewable Energy Systems and over 15 years in the industry, Anya envisioned a company that not only provided cutting-edge solar solutions but also fostered a community committed to environmental stewardship.`,
+    bio: `Mr. Olayiwola Sulaimon A. , a passionate advocate for sustainable energy, founded Optimum Solar with a clear mission: to make clean, affordable solar power accessible to every home and business. With a Ph.D. in Renewable Energy Systems and over 15 years in the industry, Mr.Olayiwola envisioned a company that not only provided cutting-edge solar solutions but also fostered a community committed to environmental stewardship.`,
   };
 
-  const companyOrigin = `Optimum Solar was born from a simple yet powerful idea during a challenging period of energy instability. Witnessing firsthand the impact of unreliable power grids and the rising cost of traditional energy, Dr. Sharma was driven to create a reliable and eco-friendly alternative. Starting in a small garage with a big dream, Optimum Solar has grown into a leading provider of solar solutions, built on principles of innovation, integrity, and a deep commitment to a brighter, greener future.`;
+  const companyOrigin = `Optimum Solar was born from a simple yet powerful idea during a challenging period of energy instability. Witnessing firsthand the impact of unreliable power grids and the rising cost of traditional energy, Mr.Olayiwola was driven to create a reliable and eco-friendly alternative. Starting in a small garage with a big dream, Optimum Solar has grown into a leading provider of solar solutions, built on principles of innovation, integrity, and a deep commitment to a brighter, greener future.`;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-yellow-50 py-16 px-4 sm:px-6 lg:px-8 font-sans">
@@ -27,7 +34,7 @@ const Founder: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-12">
           {/* Founder Image */}
           <div className="flex-shrink-0 w-full md:w-1/3 mb-8 md:mb-0">
-            <div className="relative w-full h-0 pb-[100%] rounded-xl overflow-hidden shadow-xl border-4 border-[#f3cd94]">
+            <div data-aos={"fade-up"} className="relative w-full h-0 pb-[100%] rounded-xl overflow-hidden shadow-xl border-4 border-[#f3cd94]">
               <img
                 className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
                 src={founder.imageUrl}
@@ -46,7 +53,7 @@ const Founder: React.FC = () => {
           {/* Company Story & Founder Bio */}
           <div className="flex-1 space-y-8">
             {/* Founder Bio */}
-            <div>
+            <div data-aos={"fade-up"}>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">About Mr. Olayiwola Sulaimon A.</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {founder.bio}
@@ -54,7 +61,7 @@ const Founder: React.FC = () => {
             </div>
 
             {/* Company Origin */}
-            <div>
+            <div data-aos={"fade-up"}>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Origin Story</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {companyOrigin}

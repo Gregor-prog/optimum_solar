@@ -1,4 +1,11 @@
+import AOS from "aos"
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 function Services(){
+
+  useEffect(() => {
+    AOS.init()
+  },[])
    const services = [
   {
     title: "Solar Installation",
@@ -24,7 +31,7 @@ function Services(){
 
     return <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service,index) => (
-            <div key={index} className="relative overflow-hidden h-[400px] ">
+            <div key={index} data-aos="fade-right" className="relative overflow-hidden h-[400px] ">
                 <img src={service.image} alt="" className="h-full w-full blur-[0.2px] opacity-95" />
                 <div className="absolute h-full top-0 bg-[#00000036] backdrop-blur-[1px]  hover:left-[400px] p-8 py-20 align-text-bottom text-right flex flex-col justify-end">
                 <p className="text-4xl font-semibold text-white drop-shadow-black drop-shadow-xl">{service.title}</p>
