@@ -45,8 +45,8 @@ useEffect(() => {
                
                 <div className="w-[100%] relative   sm:absolute z-20 h-[100%] sm:h-[700px] top-0 rounded-3xl  sm:bg-[rgba(24,24,24,0.38)] flex flex-col items-center ">
                 <div className="flex flex-col items-left sm:items-center h-[100%] sm:h-[70%] sm:w-[80%] justify-center p-3 rounded-3xl my-[20px] sm:my-[0px] ">
-                        <p className="text-[25px]  text-black my-4 sm:text-[35px] md:text-[45px] font-bold sm:text-white text-left sm:text-center">
-                            “Reliable  <ReactTyped className="ml whitespace-nowrap overflow-hidden text-ellipsis w-[40px]"
+                        <p className="text-[25px] h-[150px] text-black my-4 sm:text-[35px] md:text-[45px] font-bold sm:text-white text-left sm:text-center">
+                            “Reliable  <ReactTyped className="ml  whitespace-nowrap overflow-hidden text-ellipsis w-[40px]"
                               strings={[
                                 "Solar System",
                                 "CCTV Security",
