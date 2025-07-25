@@ -12,7 +12,7 @@ const Founder = () => {
     name: 'Mr. Olayiwola Sulaimon A.',
     title: 'Visionary Founder & CEO',
     imageUrl: founderImage, // Placeholder image
-    bio: `Mr. Olayiwola Sulaimon A. , a passionate advocate for sustainable energy, founded Optimum Solar with a clear mission: to make clean, affordable solar power accessible to every home and business. With a Ph.D. in Renewable Energy Systems and over 15 years in the industry, Mr.Olayiwola envisioned a company that not only provided cutting-edge solar solutions but also fostered a community committed to environmental stewardship.`,
+    bio: `Mr. Olayiwola Sulaimon A. , a passionate advocate for sustainable energy, founded Optimum Solar with a clear mission: to make clean, affordable solar power accessible to every home and business. With a Ph.D. in Renewable Energy Systems and over 15 years in the industry, Mr. Olayiwola envisioned a company that not only provided cutting-edge solar solutions but also fostered a community committed to environmental stewardship.`,
   };
 
   const companyOrigin = `Optimum Solar was born from a simple yet powerful idea during a challenging period of energy instability. Witnessing firsthand the impact of unreliable power grids and the rising cost of traditional energy, Mr.Olayiwola was driven to create a reliable and eco-friendly alternative. Starting in a small garage with a big dream, Optimum Solar has grown into a leading provider of solar solutions, built on principles of innovation, integrity, and a deep commitment to a brighter, greener future.`;

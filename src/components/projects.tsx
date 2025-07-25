@@ -39,7 +39,7 @@ function Projects(){
                 responsive={responsive}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={1000} // Speed in milliseconds
+                autoPlaySpeed={2000} // Speed in milliseconds
                 // removeArrowOnDeviceType={["tablet", "mobile"]} // Hide arrows on tablet and mobile
                 showDots={false} // Hide the small dots/indicators
                 
