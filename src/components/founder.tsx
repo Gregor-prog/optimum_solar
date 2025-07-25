@@ -18,7 +18,7 @@ const Founder = () => {
   const companyOrigin = `Optimum Solar was born from a simple yet powerful idea during a challenging period of energy instability. Witnessing firsthand the impact of unreliable power grids and the rising cost of traditional energy, Mr.Olayiwola was driven to create a reliable and eco-friendly alternative. Starting in a small garage with a big dream, Optimum Solar has grown into a leading provider of solar solutions, built on principles of innovation, integrity, and a deep commitment to a brighter, greener future.`;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-yellow-50 py-16 px-4 sm:px-6 lg:px-8 font-sans">
+    <div className="overflow-hidden min-h-screen bg-gradient-to-br from-gray-50 to-yellow-50 py-16 px-4 sm:px-6 lg:px-8 font-sans">
       <div className=" bg-white rounded-2xl shadow-xl overflow-hidden p-8 md:p-12 lg:p-16">
         {/* Section Header */}
         <div className="text-center mb-12">

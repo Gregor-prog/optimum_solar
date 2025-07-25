@@ -40,7 +40,7 @@ const responsive = {
     },
   };
 
-    return <div className='mt-12 bg-[#e1f5d573] rounded-2xl py-6'>
+    return <div className='overflow-hidden mt-12 bg-[#e1f5d573] rounded-2xl py-6'>
       <p className='text-center font-bold text-2xl mb-4 text-[#242323]'>Explore our solar installation plans</p>
        <Carousel
         responsive={responsive}

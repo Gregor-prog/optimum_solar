@@ -29,7 +29,7 @@ function Services(){
   },
 ];
 
-    return <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    return <div className="overflow-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service,index) => (
             <div key={index} data-aos="fade-right" className="relative overflow-hidden h-[400px] ">
                 <img src={service.image} alt="" className="h-full w-full blur-[0.2px] opacity-95" />

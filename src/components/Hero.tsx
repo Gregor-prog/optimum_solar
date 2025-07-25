@@ -40,7 +40,7 @@ useEffect(() => {
 
 
 
-    return <div className="w-[100%] relative rounded-3xl overflow-hidden   " >
+    return <div className=" w-[100%] relative rounded-3xl overflow-hidden   " >
             {/* <img src={panel} alt="" className="absolute bottom-[330px] right-[-20px] w-[150px]"/> */}
                
                 <div className="w-[100%] relative   sm:absolute z-20 h-[100%] sm:h-[700px] top-0 rounded-3xl  sm:bg-[rgba(24,24,24,0.38)] flex flex-col items-center ">

@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebookF, FaWhatsapp,FaYoutube,FaTiktok,FaTelegram } fr
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10 px-6 mt-20">
+    <footer className="bg-black text-white py-10 px-6 mt-20 overflow-hidden">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         {/* Logo & Tagline */}
         <div>
