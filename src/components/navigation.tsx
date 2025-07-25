@@ -31,8 +31,8 @@ const navItems: NavItem[] = [
     icon: "settings",
   },
   {
-    name: "Projects",
-    href: "/projects",
+    name: "Plans",
+    href: "/Plans",
     icon: "briefcase",
   },
 
