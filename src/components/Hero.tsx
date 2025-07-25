@@ -65,7 +65,7 @@ useEffect(() => {
                         <p className="text-[12px]  text-bla sm:text-[20px] font-semibold  sm:text-white  sm:text-center w-[90%]">
                             Say goodbye to NEPA issues, control your home from anywhere, and keep your property secure.
                         </p>
-                        <button  className="my-6 p-3.5 rounded-2xl bg-[#ff990088] w-[50%] sm:w-[25%] text-[#3d2828 font-bold "><a  href="https://wa.me/234703627361"> Get in touch</a></button>
+                        <button  className="my-6 p-3.5 rounded-2xl bg-[#ff990088] w-[50%] sm:w-[25%] text-[#3d2828 font-bold "><a  href="https://wa.me/23470362736161"> Get in touch</a></button>
                 </div>
 
                    <div className="hidden md:flex items-center justify-evenly flex-col sm:flex-row mt-[20px] mb-[20px] sm:mt-[0px] ">

@@ -26,7 +26,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-white mb-3">Connect with us</h4>
           <div className="flex space-x-4 text-xl text-orange-500">
             <a
-              href="https://wa.me/234703627361"
+              href="https://wa.me/23470362736161"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-orange-300"
