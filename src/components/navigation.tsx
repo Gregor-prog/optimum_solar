@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 import OPt from "../assets/IMG-20250620-WA0212_1__2-removebg-preview.png"
 interface NavItem {
   name: string;
@@ -12,7 +12,8 @@ interface NavItem {
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
-
+  const location = useLocation()
+  const currentPath = location.pathname
 
 const navItems: NavItem[] = [
   {
@@ -41,7 +42,6 @@ const navItems: NavItem[] = [
 
   
   const handleNavClick = (e: React.MouseEvent, name: string) => {
-    e.preventDefault();
     setActiveLink(name.toLowerCase());
     
    
@@ -69,17 +69,17 @@ const navItems: NavItem[] = [
                 to={item.href}
                 onClick={(e) => handleNavClick(e,item.name)}
                 className={`relative px-1 py-2 text-[#FF9800] hover:text-orange-400 transition-colors font-bold duration-200 ${
-                  activeLink === item.name.toLowerCase() ? 'text-orane-400 font-medium' : ''
+                  currentPath === item.href ? ' font-medium border-b-[3px] border-[#f3f3f3]' : ''
                 }`}
               >
                 {item.icon && <i className={`${item.icon} mr-2`}></i>}
                 {item.name}
                 <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 ${
-                  activeLink === item.name.toLowerCase() ? 'scale-x-100' : 'scale-x-0'
+                  currentPath === item.name.toLowerCase() ? 'scale-x-100' : 'scale-x-0'
                 }`}></span>
               </Link>
             ))}
-            <button className="ml-4 px-6 py-2 bg-gradient-to-r bg-orange-400 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button className="ml-4 px-6 py-2 bg-gradient-to-r bg-orange-400 text-white rounded-full  transition-all duration-300 shadow-lg hover:shadow-xl">
               Get Started
             </button>
           </nav>
@@ -125,8 +125,8 @@ const navItems: NavItem[] = [
                   to={item.href}  
                   onClick={(e) => handleNavClick(e, item.name)}
                   className={`px-3 py-2 rounded-lg transition-colors duration-200 ${
-                    activeLink === item.name.toLowerCase()
-                      ? 'bg-blue-50 text-blue-600'
+                    currentPath === item.href
+                      ? 'bg-blue-50 '
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
