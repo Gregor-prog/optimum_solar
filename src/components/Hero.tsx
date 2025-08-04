@@ -1,6 +1,6 @@
 // import heroImage from "../assets/3d-rendering-house-model (1).jpg"
 import { useEffect } from "react";
-import heroImage from "../assets/african-american-technician-checks-maintenance-solar-panels-group-three-black-engineers-meeting-solar-station.jpg"
+// import heroImage from "../assets/african-american-technician-checks-maintenance-solar-panels-group-three-black-engineers-meeting-solar-station.jpg"
 import { PanelLeftDashed, Camera, Smartphone } from "lucide-react";
 // import { serviceItem } from "../types/interface";
 import {ReactTyped} from "react-typed"
@@ -37,6 +37,8 @@ useEffect(() => {
       "Get solar products, phones, and smart devices — all in one trusted place.",
   },
 ];
+
+const heroImage  = "https://res.cloudinary.com/drh4ma3hj/image/upload/v1754324848/IMG-20250705-WA0102_ep0cv3.jpg"
 
 
 
@@ -79,7 +81,7 @@ useEffect(() => {
                 </div>
         
                 </div>
-                 <div className="z-4 sm:h-[700px]  sm:static top-3.5  w-[100%] overflow-hidden mt-[-10px] rounded-3xl ">
+                 <div className="z-4 sm:h-[700px] h-[350px]  sm:static top-3.5  w-[100%] overflow-hidden mt-[-10px] rounded-3xl ">
                     <img src={heroImage} alt="" data-aos="fade-left" className="md:mt-[-200px] mt-[0px] sm:mt-[-100px]"/>
                 </div>
                     

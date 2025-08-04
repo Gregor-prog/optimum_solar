@@ -21,11 +21,6 @@ const navItems: NavItem[] = [
     icon: "home", // optional: e.g., for an icon library like Heroicons or FontAwesome
   },
   {
-    name: "About",
-    href: "/about",
-    icon: "info",
-  },
-  {
     name: "Services",
     href: "/services",
     icon: "settings",
@@ -58,7 +53,7 @@ const navItems: NavItem[] = [
   
 
   return (
-    <header className="overflow-hidden z-50  bg-[#f1d1b27a] rounded-3xl drop-shadow-xl drop-shadow-[#0000004d] shadow-black">
+    <header className="overflow-hidden z-50 m-auto w-[95%] md:w-full  bg-[#f1d1b27a] rounded-3xl drop-shadow-xl drop-shadow-[#0000004d] shadow-black mt-3 md:mt-0">
       <div className=" mx-auto px-4 py-3">
         <div className="flex justify-between items-center ">
           {/* Logo */}

@@ -6,7 +6,11 @@ function Projects(){
         {title:"4.2KVA done at Iseyin, Ondo State, Nigeria",image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1753388654/IMG_0813_zi6jrx.jpg"},
         {title:"2KVA system done at Ibadan, Oyo State, Nigeria",image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1753388626/IMG_0668_xqld1q.jpg"},
         {title:"8KVA sstem done at IWO ROAD Ibadan, oyo State, Nigeria",image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1753388656/IMG_8217_quckq9.jpg"},
-        // {title:"",image:""},
+        {title:"1.5KVA with Lithium battery done at ilesha, Nigeria",image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754324666/IMG_1321_bc6gcw.jpg"},
+        {title:"1.5KVA with Lithium battery done at ilesha, Nigeria",image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754326427/IMG_1328_zpqztl.jpg"},
+        {title:"4VA done at Egbeda, Oyo State, Nigeria",image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754324826/IMG-20250804-WA0017_zztgl1.jpg"},
+        {title:"6.2KVA done at Iganna,Nigeria",image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754324845/IMG-20250705-WA0114_v7hsik.jpg"},
+        {title:"1.5KVA done at Iseyin,Nigeria",image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754324851/IMG-20250705-WA0080_deo3s5.jpg"},
     ]
 
 

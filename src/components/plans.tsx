@@ -1,19 +1,22 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import one from "../assets/plans/IMG-20250706-WA0007.jpg"
-import two from "../assets/plans/IMG-20250706-WA0008.jpg"
-import three from "../assets/plans/IMG-20250706-WA0009.jpg"
-import four from "../assets/plans/IMG-20250706-WA0010.jpg"
-import five from "../assets/plans/IMG-20250706-WA0011.jpg"
-import six from "../assets/plans/IMG-20250706-WA0012.jpg"
-import seven from "../assets/plans/IMG-20250706-WA0013.jpg"
-import eight from "../assets/plans/IMG-20250706-WA0015.jpg"
-import nine from "../assets/plans/IMG-20250706-WA0016.jpg"
-import ten from "../assets/plans/IMG-20250706-WA0018.jpg"
 import {  LucideArrowRight } from 'lucide-react';
 
 function Plans(){
-    const planImages = [one,two,three,four,five,six,seven,eight,nine,ten]
+    const planImages = [
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330316/IMG-20250707-WA0015_ooioij.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330316/IMG-20250707-WA0014_qy3dt1.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330316/IMG-20250706-WA0011_xs8c6w.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330315/IMG-20250706-WA0012_wag7bw.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330315/IMG-20250706-WA0013_rgwvs7.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330315/IMG-20250706-WA0016_bzbffx.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330315/IMG-20250706-WA0008_gr684r.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330314/IMG-20250706-WA0009_ypdqlx.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330314/IMG-20250706-WA0015_cuonfc.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330314/IMG-20250706-WA0018_nbb1r8.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330314/IMG-20250706-WA0010_rnytul.jpg"},
+        {image:"https://res.cloudinary.com/drh4ma3hj/image/upload/v1754330313/IMG-20250706-WA0007_hs9gkp.jpg"}
+    ]
 
       // Function to update centerSlidePercentage based on screen width
 
@@ -51,8 +54,8 @@ const responsive = {
         showDots={false} // Hide the small dots/indicators
         
       >
-        {planImages.map((plan,index) => (
-            <div  className='mx-2' key={index}><img src={plan} alt="bla" /></div>
+        {planImages.map((image,index) => (
+            <div  className='mx-2' key={index}><img src={image.image} alt="bla" /></div>
         ))}
       </Carousel>
       <div className='flex items-center justify-center cursor-pointer' ><p>See more</p> <LucideArrowRight/> </div>
