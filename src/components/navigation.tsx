@@ -20,11 +20,11 @@ const navItems: NavItem[] = [
     href: "/",
     icon: "home", // optional: e.g., for an icon library like Heroicons or FontAwesome
   },
-  {
-    name: "Services",
-    href: "/services",
-    icon: "settings",
-  },
+  // {
+  //   name: "Services",
+  //   href: "/services",
+  //   icon: "settings",
+  // },
   {
     name: "Plans",
     href: "/Plans",
@@ -70,7 +70,7 @@ const navItems: NavItem[] = [
                 {item.icon && <i className={`${item.icon} mr-2`}></i>}
                 {item.name}
                 <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 ${
-                  currentPath === item.name.toLowerCase() ? 'scale-x-100' : 'scale-x-0'
+                  currentPath === item.href ? 'scale-x-100' : 'scale-x-0'
                 }`}></span>
               </Link>
             ))}

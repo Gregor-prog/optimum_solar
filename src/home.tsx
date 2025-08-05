@@ -2,7 +2,7 @@ import NavigationBar from "./components/navigation";
 import Hero from "./components/Hero";
 import Products from "./components/products";
 import AboutUsSection from "./components/aboutUs";
-import Services from "./components/services";
+// import Services from "./components/services";
 import Footer from "./components/footer";
 import ContactPage from "./components/contactUs";
 import Plans from "./components/plans";
@@ -13,7 +13,7 @@ function Home(){
         <NavigationBar/>
         <Hero/>
         <Products/>
-        <Services/>
+        {/* <Services/> */}
         <Plans/>
         <Founder/>
         <Projects/>
