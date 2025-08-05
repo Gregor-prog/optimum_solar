@@ -1,4 +1,5 @@
 import { FaInstagram, FaFacebookF, FaWhatsapp,FaYoutube,FaTiktok,FaTelegram } from "react-icons/fa";
+import { IoLocation } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -9,6 +10,11 @@ const Footer = () => {
           <h2 className="text-2xl font-bold text-orange-500 mb-2">Optimum Solar</h2>
           <p className="text-sm text-gray-400">
             Powering your peace of mind with clean energy, smart homes & secured spaces.
+          </p>
+
+          <p className="text-sm mt-7">
+            <span className="flex"><IoLocation/>   Adresss:</span>
+            Shop 2,opposite Otu Garage, Oke-Oremoje, Customs Area, Along Saki Expressway Iseyin.
           </p>
         </div>
 

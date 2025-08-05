@@ -2,6 +2,8 @@ import { useEffect, } from 'react';
 import { Phone, Mail, MapPin, Facebook , Instagram  } from 'lucide-react';
 import NavigationBar from '../components/navigation';
 import { FaTelegram,  } from 'react-icons/fa';
+import Lottie from "lottie-react"
+import animation from "../animations/about us.json"
 // Main App component to render the ContactUs page
 
 
@@ -34,10 +36,10 @@ function ContactUs() {
   return (
     <div className='w-[100vw] px-[4px]  bg-gradient-to-b from-[#daf3da] overflow-hidden to-[white]" style={{fontFamily: "Roboto Slab"}}'>
         <NavigationBar/>
-        <div className="bg-[#ffffff44] m-auto my-8 rounded-xl shadow-2xl p-6 sm:p-8 lg:p-10 max-w-4xl w-full flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-start border border-gray-200">
+        <div className="bg-[#ffffff44] m-auto my-8 rounded-xl shadow-2xl p-6 sm:p-8 lg:p-10 max-w-4xl w-full flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-center border border-gray-200">
       {/* Left Section: Lottie Animation */}
-      <div className="w-full lg:w-1/2 flex justify-center items-center p-4 bg-blue-50 rounded-lg">
-    
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center p-4  bg-blue-50 rounded-lg">
+        <Lottie animationData={animation} loop={true}  />
       </div>
 
       {/* Right Section: Contact Information */}
@@ -74,7 +76,16 @@ function ContactUs() {
           <div>
             <h3 className="text-xl font-semibold text-gray-800">Location</h3>
             <p className="text-gray-700 text-lg">
-              Serving Southwest Nigeria and beyond
+              <span className='font-bold'>
+                Branch Address:
+              </span>
+              Shop 16, Denus plaza,academy,iwo road,ibadan.
+            </p>
+            <p className="text-gray-700 text-lg">
+              <span className='font-bold'>
+                Office Adress:
+              </span>
+                Shop 2,opposite Otu Garage,Oke-Oremoje,Customs Area,Along Saki Expressway Iseyin.
             </p>
           </div>
         </div>
