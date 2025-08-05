@@ -48,7 +48,7 @@ const heroImage  = "https://res.cloudinary.com/drh4ma3hj/image/upload/v175432484
                 <div className="w-[100%] relative   sm:absolute z-20 h-[100%] sm:h-[700px] top-0 rounded-3xl  sm:bg-[rgba(24,24,24,0.38)] flex flex-col items-center ">
                 <div className="flex flex-col items-left sm:items-center h-[100%] sm:h-[70%] sm:w-[80%] justify-center p-3 rounded-3xl my-[20px] sm:my-[0px] ">
                         <p className="text-[25px]  text-black my-4 sm:text-[35px] md:text-[45px] font-bold sm:text-white text-left sm:text-center">
-                            “Reliable  <ReactTyped className="ml  whitespace-nowrap overflow-hidden text-ellipsis w-[40px]"
+                            “Reliable  <ReactTyped className="ml  whitespace-nowrap overflow-hidden text-ellipsis w-[40px] "
                               strings={[
                                 "Solar System",
                                 "CCTV Security",
@@ -61,7 +61,7 @@ const heroImage  = "https://res.cloudinary.com/drh4ma3hj/image/upload/v175432484
                             >
                                 {/* <input type="text" />  */}
                                 <h1 className="h-[35px]"/>
-                              </ReactTyped>for Every Nigerian Household”
+                              </ReactTyped><span className="pt-4">for Every Nigerian Household”</span>
                            
                         </p>
                         <p className="text-[12px]  text-bla sm:text-[20px] font-semibold  sm:text-white  sm:text-center w-[90%]">

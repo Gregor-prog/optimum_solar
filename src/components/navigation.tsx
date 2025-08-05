@@ -64,7 +64,7 @@ const navItems: NavItem[] = [
                 to={item.href}
                 onClick={() => handleNavClick()}
                 className={`relative px-1 py-2 text-[#FF9800] hover:text-orange-400 transition-colors font-bold duration-200 ${
-                  currentPath === item.href ? ' font-medium border-b-[3px] border-[#f3f3f3]' : ''
+                  currentPath === item.href ? ' font-medium border-b-[1px] border-[#f3f3f3]' : ''
                 }`}
               >
                 {item.icon && <i className={`${item.icon} mr-2`}></i>}
