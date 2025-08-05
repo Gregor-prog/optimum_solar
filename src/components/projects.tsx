@@ -37,7 +37,7 @@ function Projects(){
     },
   };
 
-    return <div className="overflow-hidden my-[20px]-50 mx-1.5 rounded-2xl py-6  ">
+    return <div id="projects" className="overflow-hidden my-[20px]-50 mx-1.5 rounded-2xl py-6  ">
  
               <Carousel
                 responsive={responsive}

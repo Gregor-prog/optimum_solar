@@ -14,16 +14,18 @@ const Footer = () => {
 
           <p className="text-sm mt-7">
             <span className="flex"><IoLocation/>   Adresss:</span>
-            Shop 2,opposite Otu Garage, Oke-Oremoje, Customs Area, Along Saki Expressway Iseyin.
+            <p><span className="font-bold">Branch - </span>Shop 16, Denus plaza,academy,iwo road,ibadan</p>
+            <p><span className="font-bold">Office - </span>Shop 2,opposite Otu Garage, Oke-Oremoje, Customs Area, Along Saki Expressway Iseyin.</p>
+            
           </p>
         </div>
 
         {/* Quick Links */}
         <div className="space-y-2 text-sm">
           <h4 className="text-lg font-semibold text-white mb-3">Quick Links</h4>
-          <a href="/about" className="block text-gray-400 hover:text-orange-500 transition">About</a>
-          <a href="/services" className="block text-gray-400 hover:text-orange-500 transition">Services</a>
-          <a href="/projects" className="block text-gray-400 hover:text-orange-500 transition">Projects</a>
+          <a href="/#about" className="block text-gray-400 hover:text-orange-500 transition">About</a>
+          <a href="/#services" className="block text-gray-400 hover:text-orange-500 transition">Services</a>
+          <a href="/#projects" className="block text-gray-400 hover:text-orange-500 transition">Projects</a>
           <a href="/contact" className="block text-gray-400 hover:text-orange-500 transition">Contact</a>
         </div>
 

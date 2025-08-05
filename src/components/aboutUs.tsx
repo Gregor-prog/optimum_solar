@@ -8,7 +8,7 @@ function AboutUsSection() {
     AOS.init()
   },[])
   return (
-    <section className="bg-[white] py-9 px-6 md:px-10 rounded-3xl backdrop-blur-2xl ">
+    <section id="about" className="bg-[white] py-9 px-6 md:px-10 rounded-3xl backdrop-blur-2xl ">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
           About Us
