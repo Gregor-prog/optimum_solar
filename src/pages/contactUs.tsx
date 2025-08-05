@@ -1,6 +1,7 @@
 import { useEffect, } from 'react';
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import NavigationBar from '../components/navigation';
+import { FaTelegram, FaTiktok } from 'react-icons/fa';
 // Main App component to render the ContactUs page
 
 
@@ -93,9 +94,8 @@ function ContactUs() {
             >
               <Facebook className="w-8 h-8" />
             </a>
-           
             <a
-              href="https://instagram.com"
+              href="https://www.facebook.com/people/Optim%C3%BBm-Gadgets-MART/100094600571420/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-pink-500 transition duration-300 transform hover:scale-110"
@@ -104,13 +104,13 @@ function ContactUs() {
               <Instagram className="w-8 h-8" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://t.me//OPTIMUM_GADGET_SOLAR_INNOVATIONS"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-blue-700 transition duration-300 transform hover:scale-110"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-8 h-8" />
+              <FaTelegram className="w-8 h-8" />
             </a>
           </div>
         </div>
