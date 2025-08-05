@@ -11,7 +11,6 @@ interface NavItem {
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('home');
   const location = useLocation()
   const currentPath = location.pathname
 
@@ -41,11 +40,7 @@ const navItems: NavItem[] = [
 ];
 
   
-  const handleNavClick = (e: React.MouseEvent, name: string) => {
-    setActiveLink(name.toLowerCase());
-    
-   
-    
+  const handleNavClick = () => {    
     if (isMenuOpen) {
       setIsMenuOpen(false);
     }
@@ -67,7 +62,7 @@ const navItems: NavItem[] = [
               <Link
                 key={index}
                 to={item.href}
-                onClick={(e) => handleNavClick(e,item.name)}
+                onClick={() => handleNavClick()}
                 className={`relative px-1 py-2 text-[#FF9800] hover:text-orange-400 transition-colors font-bold duration-200 ${
                   currentPath === item.href ? ' font-medium border-b-[3px] border-[#f3f3f3]' : ''
                 }`}
@@ -123,7 +118,7 @@ const navItems: NavItem[] = [
                 <Link
                   key={index}
                   to={item.href}  
-                  onClick={(e) => handleNavClick(e, item.name)}
+                  onClick={() => handleNavClick()}
                   className={`px-3 py-2 rounded-lg transition-colors duration-200 ${
                     currentPath === item.href
                       ? 'bg-blue-50 '

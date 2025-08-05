@@ -5,8 +5,15 @@ import animeB from "../animations/Solar Powered House.json"
 import animeC from "../animations/IOT house.json"
 import animeD from "../animations/Solar Green Energy.json"
 import Lottie from "lottie-react"
+import AOS from "aos"
+import 'aos/dist/aos.css';
+import { useEffect } from "react"
 
 function Plans(){
+
+      useEffect(() => {
+        AOS.init()
+      },[])
 
     const plans = [
   {
@@ -60,7 +67,7 @@ function Plans(){
             </div>
             <div className="flex flex-col md:flex-row">
                 {plans.map((plan) => (
-                    <div className="bg-white rounded-2xl p-5 m-4">
+                    <div data-aos={"fade-left"} className="bg-white rounded-2xl p-5 m-4">
                         <div className="w-[160px] h-[140px] my-9 mx-auto">
                         <Lottie loop={true} animationData={plan.animationData} />
                         </div>
