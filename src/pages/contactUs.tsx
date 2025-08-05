@@ -1,7 +1,7 @@
 import { useEffect, } from 'react';
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook , Instagram  } from 'lucide-react';
 import NavigationBar from '../components/navigation';
-import { FaTelegram, FaTiktok } from 'react-icons/fa';
+import { FaTelegram,  } from 'react-icons/fa';
 // Main App component to render the ContactUs page
 
 
